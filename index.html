@@ -7,186 +7,37 @@
 <title>Prefeitura de Santana do Garambéu | Canais Oficiais</title>
 <meta name="description" content="Canais oficiais, contatos e serviços da Prefeitura Municipal de Santana do Garambéu - MG.">
 <style>
-:root {
-  --navy:#071b4a;
-  --blue:#078ff0;
-  --blue2:#1168ba;
-  --green:#07931e;
-  --ink:#0b1d39;
-  --muted:#66758a;
-  --line:#d9e3ee;
-  --card:#fff;
-  --bg:#f4f8fc;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-  color:var(--ink);
-  background:
-    radial-gradient(circle at 10% 0%,rgba(7,143,240,.14),transparent 30rem),
-    radial-gradient(circle at 90% 15%,rgba(7,27,74,.08),transparent 25rem),
-    var(--bg);
-}
-a{color:inherit}
-.shell{width:min(760px,100%);margin:auto;padding:18px 14px 46px}
-.hero{
-  position:relative;overflow:hidden;
-  background:linear-gradient(145deg,#06163e,#0a2e74 55%,#087fd4);
-  color:white;border-radius:28px;padding:26px 20px 22px;
-  box-shadow:0 20px 50px rgba(7,27,74,.20);
-}
-.hero:after{
-  content:"";position:absolute;right:-90px;top:-100px;width:260px;height:260px;
-  border:1px solid rgba(255,255,255,.18);border-radius:50%;
-  box-shadow:0 0 0 28px rgba(255,255,255,.04),0 0 0 58px rgba(255,255,255,.03);
-}
-.brand{position:relative;z-index:1;display:flex;align-items:center;gap:16px}
-.brand img{width:100%;max-width:520px;height:auto;display:block;object-fit:contain;filter:drop-shadow(0 8px 16px rgba(0,0,0,.2))}
-.hero p{position:relative;z-index:1;margin:16px 0 0;font-size:14px;opacity:.88}
-.hero .badge{position:relative;z-index:1;display:inline-flex;align-items:center;gap:7px;margin-top:14px;padding:8px 11px;border-radius:999px;background:rgba(255,255,255,.12);font-size:12px;border:1px solid rgba(255,255,255,.16)}
-
-.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 18px}
-.quick a{text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px 10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;min-height:92px;font-weight:800;box-shadow:0 8px 24px rgba(17,43,77,.06);transition:.18s ease}
-.quick a:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(17,43,77,.11)}
-.quick .ico{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:#eef5fb;font-size:19px}
-.quick small{font-size:11px;color:var(--muted);font-weight:650;text-align:center}
-
-.title-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:22px 4px 10px}
-.title-row h2{margin:0;font-size:14px;text-transform:uppercase;letter-spacing:.12em;color:#53657c}
-.title-row span{height:1px;flex:1;background:var(--line)}
-
-.card{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 10px 28px rgba(17,43,77,.06);margin-bottom:12px}
-.card-head{display:flex;align-items:center;gap:12px;padding:15px 16px;border-bottom:1px solid var(--line)}
-.card-head .mark{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:#edf5fb;font-size:20px;flex:0 0 auto}
-.card-head .headcopy{min-width:0;flex:1}
-.card-head h3{margin:0;font-size:17px}
-.card-head p{margin:3px 0 0;color:var(--muted);font-size:12px}
-.card-head button{border:0;background:#f0f5f9;width:42px;height:42px;border-radius:14px;cursor:pointer;font-size:18px;color:var(--ink)}
-.card-body{padding:6px 14px 14px}
-.card[data-open="false"] .card-body{display:none}
-.card[data-open="false"] .toggle{transform:rotate(-90deg)}
-.logo{padding:12px 4px 8px}
-.logo img{display:block;max-width:100%;max-height:92px;object-fit:contain;object-position:left center}
-.logo.edu img,.logo.saude img,.logo.trans img{max-height:76px}
-
-.contact{display:flex;align-items:center;gap:10px;padding:12px 2px;border-top:1px solid #edf2f6}
-.contact:first-of-type{border-top:0}
-.contact-info{min-width:0;flex:1}
-.contact strong{display:block;font-size:14px;line-height:1.25}
-.contact span{display:block;font-size:12px;color:var(--muted);margin-top:3px}
-.actions{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 13px;border-radius:13px;text-decoration:none;font-size:12px;font-weight:800;border:1px solid var(--line);background:#fff}
-.btn.call{background:var(--navy);color:white;border-color:var(--navy)}
-.btn.green{background:#087f1d;color:#fff;border-color:#087f1d}
-.btn:hover{filter:brightness(.97)}
-
-.footer{text-align:center;color:var(--muted);font-size:12px;padding:24px 12px 0;line-height:1.55}
-.note{margin:14px 0 0;padding:12px 14px;background:#fff8dc;border:1px solid #f1dda5;border-radius:16px;font-size:12px;color:#665018}
-
-@media (max-width:560px){
- .shell{padding:10px 10px 36px}
- .hero{border-radius:23px;padding:20px 16px}
- .brand img{max-width:100%}
- .quick{grid-template-columns:1fr 1fr}
- .quick a:first-child{grid-column:1/-1;flex-direction:row;min-height:64px}
- .card-head{padding:13px}
- .contact{align-items:flex-start;flex-direction:column}
- .actions{width:100%;justify-content:stretch}
- .actions .btn{flex:1}
-}
-@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+:root{--navy:#071b4a;--blue:#0795ef;--blue2:#0f63b9;--green:#078c24;--ink:#10223c;--muted:#6d7d90;--line:#dbe5ee;--bg:#f5f8fb;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,rgba(7,149,239,.14),transparent 28rem),radial-gradient(circle at 90% 16%,rgba(7,27,74,.08),transparent 24rem),var(--bg)}
+a{color:inherit}.shell{width:min(720px,100%);margin:auto;padding:12px 12px 42px}.hero{position:relative;overflow:hidden;background:linear-gradient(145deg,#06163e,#0a2f77 58%,#078edc);color:#fff;border-radius:28px;padding:24px 20px 22px;box-shadow:0 18px 46px rgba(7,27,74,.18)}.hero:after{content:"";position:absolute;right:-90px;top:-105px;width:280px;height:280px;border:1px solid rgba(255,255,255,.18);border-radius:50%;box-shadow:0 0 0 30px rgba(255,255,255,.04),0 0 0 62px rgba(255,255,255,.03)}.brand{position:relative;z-index:1;display:flex;align-items:center;gap:15px}.seal{width:76px;height:76px;flex:0 0 auto;border-radius:22px;background:#fff;color:var(--navy);display:grid;place-items:center;font-weight:900;font-size:27px;letter-spacing:-.06em;box-shadow:0 12px 26px rgba(0,0,0,.18)}.brandcopy{min-width:0}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.8}.brand h1{margin:3px 0 0;font-size:clamp(25px,6vw,38px);line-height:1.02;letter-spacing:-.04em}.brand h1 span{color:#55c4ff}.tagline{position:relative;z-index:1;margin:17px 0 0;padding-top:14px;border-top:1px solid rgba(255,255,255,.16);font-size:13px;line-height:1.5;opacity:.92}.official{position:relative;z-index:1;display:inline-flex;align-items:center;gap:7px;margin-top:13px;padding:8px 11px;border:1px solid rgba(255,255,255,.16);border-radius:999px;background:rgba(255,255,255,.10);font-size:11px;font-weight:700}.dot{width:7px;height:7px;border-radius:50%;background:#58d28a;box-shadow:0 0 0 4px rgba(88,210,138,.12)}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:12px 0 20px}.quick a{text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:18px;padding:13px 9px;min-height:94px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;font-weight:850;box-shadow:0 7px 20px rgba(17,43,77,.055);transition:.18s ease}.quick a:active{transform:scale(.98)}.qicon{width:37px;height:37px;border-radius:12px;display:grid;place-items:center;background:#edf5fb;font-size:19px}.quick small{font-size:10px;color:var(--muted);font-weight:650;overflow-wrap:anywhere}.section-title{display:flex;align-items:center;gap:10px;margin:21px 4px 10px}.section-title h2{margin:0;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#586b81;white-space:nowrap}.section-title:after{content:"";height:1px;background:var(--line);flex:1}.card{background:#fff;border:1px solid var(--line);border-radius:21px;overflow:hidden;margin-bottom:11px;box-shadow:0 9px 25px rgba(17,43,77,.055)}.head{width:100%;border:0;background:#fff;color:inherit;display:flex;align-items:center;gap:11px;text-align:left;padding:14px;cursor:pointer}.head:focus-visible,.quick a:focus-visible,.call:focus-visible{outline:3px solid rgba(7,149,239,.35);outline-offset:2px}.mark{width:43px;height:43px;border-radius:14px;background:#edf5fb;display:grid;place-items:center;font-size:20px;flex:0 0 auto}.health .mark{background:#ebf8ee}.copy{min-width:0;flex:1}.copy strong{display:block;font-size:16px}.copy small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.chev{width:35px;height:35px;display:grid;place-items:center;border-radius:11px;background:#f3f7fa;transition:.18s}.card[data-open="false"] .chev{transform:rotate(-90deg)}.body{border-top:1px solid var(--line);padding:5px 14px 13px}.card[data-open="false"] .body{display:none}.contact{display:flex;align-items:center;gap:10px;padding:12px 1px;border-top:1px solid #edf2f6}.contact:first-child{border-top:0}.info{min-width:0;flex:1}.info strong{display:block;font-size:13px;line-height:1.3}.info span{display:block;color:var(--muted);font-size:12px;margin-top:3px}.call{min-height:41px;padding:0 13px;border-radius:13px;background:var(--navy);color:#fff;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:850;white-space:nowrap}.health .call{background:var(--green)}.footer{text-align:center;color:var(--muted);font-size:11px;line-height:1.55;padding:22px 10px 0}.footer strong{color:#405269}
+@media(max-width:540px){.shell{padding:9px 9px 34px}.hero{border-radius:23px;padding:20px 16px}.seal{width:64px;height:64px;border-radius:18px;font-size:23px}.quick{grid-template-columns:1fr 1fr}.quick a:first-child{grid-column:1/-1;min-height:66px;flex-direction:row;text-align:left}.contact{align-items:flex-start;flex-direction:column}.call{width:100%}}
+@media(hover:hover) and (pointer:fine){.quick a:hover{transform:translateY(-2px);box-shadow:0 12px 27px rgba(17,43,77,.10)}.call:hover{filter:brightness(1.07)}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 </style>
 </head>
 <body>
 <main class="shell">
-  <section class="hero" aria-label="Prefeitura Municipal de Santana do Garambéu">
-    <div class="brand"><img src="assets/pref.webp" alt="Prefeitura de Santana do Garambéu"></div>
-    <p>Canais oficiais, contatos e serviços em um só lugar.</p>
-    <div class="badge">● Portal oficial de atendimento e informação</div>
-  </section>
-
-  <nav class="quick" aria-label="Canais oficiais">
-    <a href="https://santanadogarambeu.mg.gov.br/" target="_blank" rel="noopener"><span class="ico">🌐</span><span>Site Oficial</span><small>santanadogarambeu.mg.gov.br</small></a>
-    <a href="https://www.instagram.com/prefsantanagarambeu/" target="_blank" rel="noopener"><span class="ico">◎</span><span>Instagram</span><small>@prefsantanagarambeu</small></a>
-    <a href="https://www.tiktok.com/@prefsantanadogarambeu" target="_blank" rel="noopener"><span class="ico">♪</span><span>TikTok</span><small>@prefsantanadogarambeu</small></a>
-  </nav>
-
-  <div class="title-row"><h2>Atendimento</h2><span></span></div>
-
-  <section class="card" data-open="true">
-    <header class="card-head">
-      <div class="mark">🏛️</div><div class="headcopy"><h3>Prefeitura Municipal</h3><p>Atendimento geral</p></div>
-      <button class="toggle" type="button" aria-label="Abrir ou fechar seção">⌄</button>
-    </header>
-    <div class="card-body">
-      <div class="contact"><div class="contact-info"><strong>Prefeitura de Santana do Garambéu</strong><span>(32) 3334-1165</span></div><div class="actions"><a class="btn call" href="tel:+553233341165">☎ Ligar</a></div></div>
-    </div>
-  </section>
-
-  <section class="card" data-open="true">
-    <header class="card-head">
-      <div class="mark">✚</div><div class="headcopy"><h3>Saúde</h3><p>Contatos da Secretaria Municipal de Saúde</p></div>
-      <button class="toggle" type="button" aria-label="Abrir ou fechar seção">⌄</button>
-    </header>
-    <div class="card-body">
-      <div class="logo saude"><img src="assets/saude.webp" alt="Secretaria de Saúde de Santana do Garambéu"></div>
-      <div class="contact"><div class="contact-info"><strong>Secretaria de Saúde</strong><span>(32) 3334-1169</span></div><div class="actions"><a class="btn green" href="tel:+553233341169">☎ Ligar</a></div></div>
-      <div class="contact"><div class="contact-info"><strong>Plantão</strong><span>(32) 99990-8212</span></div><div class="actions"><a class="btn green" href="tel:+5532999908212">☎ Ligar</a></div></div>
-      <div class="contact"><div class="contact-info"><strong>Agendamento de Exames</strong><span>(32) 9981-3734</span></div><div class="actions"><a class="btn green" href="tel:+553299813734">☎ Ligar</a></div></div>
-    </div>
-  </section>
-
-  <section class="card" data-open="false">
-    <header class="card-head">
-      <div class="mark">🎓</div><div class="headcopy"><h3>Educação</h3><p>Secretaria, escola e atendimento escolar</p></div>
-      <button class="toggle" type="button" aria-label="Abrir ou fechar seção">⌄</button>
-    </header>
-    <div class="card-body">
-      <div class="logo edu"><img src="assets/edu.webp" alt="Secretaria de Educação de Santana do Garambéu"></div>
-      <div class="contact"><div class="contact-info"><strong>Secretaria de Educação</strong><span>(32) 9913-7690</span></div><div class="actions"><a class="btn call" href="tel:+553299137690">☎ Ligar</a></div></div>
-      <div class="contact"><div class="contact-info"><strong>Escola Cívico-Militar Eunice Silva Moreira</strong><span>(32) 3334-1120</span></div><div class="actions"><a class="btn call" href="tel:+553233341120">☎ Ligar</a></div></div>
-      <div class="contact"><div class="contact-info"><strong>Secretaria Escolar</strong><span>(32) 9199-6704</span></div><div class="actions"><a class="btn call" href="tel:+553291996704">☎ Ligar</a></div></div>
-    </div>
-  </section>
-
-  <section class="card" data-open="false">
-    <header class="card-head">
-      <div class="mark">🚌</div><div class="headcopy"><h3>Transporte</h3><p>Secretaria Municipal de Transporte</p></div>
-      <button class="toggle" type="button" aria-label="Abrir ou fechar seção">⌄</button>
-    </header>
-    <div class="card-body">
-      <div class="logo trans"><img src="assets/trans.webp" alt="Secretaria de Transporte de Santana do Garambéu"></div>
-      <div class="contact"><div class="contact-info"><strong>Secretaria de Transporte</strong><span>(32) 9128-8810</span></div><div class="actions"><a class="btn call" href="tel:+553291288810">☎ Ligar</a></div></div>
-    </div>
-  </section>
-
-  <section class="card" data-open="false">
-    <header class="card-head">
-      <div class="mark">👥</div><div class="headcopy"><h3>Assistência Social</h3><p>Centro de Referência de Assistência Social</p></div>
-      <button class="toggle" type="button" aria-label="Abrir ou fechar seção">⌄</button>
-    </header>
-    <div class="card-body">
-      <div class="contact"><div class="contact-info"><strong>CRAS</strong><span>(32) 9105-0308</span></div><div class="actions"><a class="btn call" href="tel:+553291050308">☎ Ligar</a></div></div>
-    </div>
-  </section>
-
-  <div class="note">Atenção: alguns celulares informados parecem estar com 8 dígitos após o DDD. Confirme esses números antes da publicação oficial.</div>
-
-  <footer class="footer">
-    Prefeitura Municipal de Santana do Garambéu – MG<br>
-    Canais oficiais • Serviços • Informação
-  </footer>
+<section class="hero">
+<div class="brand"><div class="seal">SG</div><div class="brandcopy"><div class="eyebrow">Prefeitura Municipal de</div><h1>Santana do <span>Garambéu</span></h1></div></div>
+<p class="tagline">Canais oficiais, contatos e serviços públicos em um só lugar.</p>
+<div class="official"><span class="dot"></span> Administração 2025–2028</div>
+</section>
+<nav class="quick" aria-label="Canais oficiais">
+<a href="https://santanadogarambeu.mg.gov.br/" target="_blank" rel="noopener"><span class="qicon">🌐</span><span>Site Oficial</span><small>santanadogarambeu.mg.gov.br</small></a>
+<a href="https://www.instagram.com/prefsantanagarambeu/" target="_blank" rel="noopener"><span class="qicon">◎</span><span>Instagram</span><small>@prefsantanagarambeu</small></a>
+<a href="https://www.tiktok.com/@prefsantanadogarambeu" target="_blank" rel="noopener"><span class="qicon">♪</span><span>TikTok</span><small>@prefsantanadogarambeu</small></a>
+</nav>
+<div class="section-title"><h2>Contatos e atendimento</h2></div>
+<section class="card" data-open="true"><button class="head" type="button"><span class="mark">🏛️</span><span class="copy"><strong>Prefeitura Municipal</strong><small>Atendimento geral</small></span><span class="chev">⌄</span></button><div class="body"><div class="contact"><div class="info"><strong>Prefeitura de Santana do Garambéu</strong><span>(32) 3334-1165</span></div><a class="call" href="tel:+553233341165">☎ Ligar</a></div></div></section>
+<section class="card health" data-open="true"><button class="head" type="button"><span class="mark">✚</span><span class="copy"><strong>Saúde</strong><small>Secretaria, plantão e exames</small></span><span class="chev">⌄</span></button><div class="body"><div class="contact"><div class="info"><strong>Secretaria de Saúde</strong><span>(32) 3334-1169</span></div><a class="call" href="tel:+553233341169">☎ Ligar</a></div><div class="contact"><div class="info"><strong>Plantão</strong><span>(32) 99990-8212</span></div><a class="call" href="tel:+5532999908212">☎ Ligar</a></div><div class="contact"><div class="info"><strong>Agendamento de Exames</strong><span>(32) 9981-3734</span></div><a class="call" href="tel:+553299813734">☎ Ligar</a></div></div></section>
+<section class="card" data-open="false"><button class="head" type="button"><span class="mark">🎓</span><span class="copy"><strong>Educação</strong><small>Secretaria e atendimento escolar</small></span><span class="chev">⌄</span></button><div class="body"><div class="contact"><div class="info"><strong>Secretaria de Educação</strong><span>(32) 9913-7690</span></div><a class="call" href="tel:+553299137690">☎ Ligar</a></div><div class="contact"><div class="info"><strong>Escola Cívico-Militar Eunice Silva Moreira</strong><span>(32) 3334-1120</span></div><a class="call" href="tel:+553233341120">☎ Ligar</a></div><div class="contact"><div class="info"><strong>Secretaria Escolar</strong><span>(32) 9199-6704</span></div><a class="call" href="tel:+553291996704">☎ Ligar</a></div></div></section>
+<section class="card" data-open="false"><button class="head" type="button"><span class="mark">🚌</span><span class="copy"><strong>Transporte</strong><small>Secretaria Municipal de Transporte</small></span><span class="chev">⌄</span></button><div class="body"><div class="contact"><div class="info"><strong>Secretaria de Transporte</strong><span>(32) 9128-8810</span></div><a class="call" href="tel:+553291288810">☎ Ligar</a></div></div></section>
+<section class="card" data-open="false"><button class="head" type="button"><span class="mark">👥</span><span class="copy"><strong>Assistência Social</strong><small>CRAS</small></span><span class="chev">⌄</span></button><div class="body"><div class="contact"><div class="info"><strong>CRAS</strong><span>(32) 9105-0308</span></div><a class="call" href="tel:+553291050308">☎ Ligar</a></div></div></section>
+<footer class="footer"><strong>Prefeitura Municipal de Santana do Garambéu – MG</strong><br>Canais oficiais • Serviços • Informação</footer>
 </main>
-
 <script>
-document.querySelectorAll('.card-head .toggle').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const card = btn.closest('.card');
-    card.dataset.open = card.dataset.open === 'true' ? 'false' : 'true';
-  });
-});
+document.querySelectorAll('.card .head').forEach(btn=>{btn.addEventListener('click',()=>{const card=btn.closest('.card');card.dataset.open=card.dataset.open==='true'?'false':'true';});});
 </script>
 </body>
 </html>
